@@ -1,0 +1,9 @@
+-- comments
+-- create database rgm;
+
+create table student(
+st_id int primary key,
+st_name varchar(30) not null,
+st_contact int not null,
+st_dept varchar(25) not null
+);
