@@ -17,3 +17,25 @@ UPDATE student SET address ="hyd" WHERE st_id=502 or st_id=504;
 ALTER TABLE student MODIFY COLUMN address varchar(50);
 -- Droping column
 ALTER TABLE student DROP COLUMN address;
+
+-- adding new column marks
+ALTER TABLE student ADD marks int;
+UPDATE student SET marks=90 WHERE st_id=502 or st_id=504;
+
+select min(marks) from student;
+
+select max(marks) from student;
+
+select avg(marks) from student;
+
+select sum(marks) from student;
+
+select count(marks) from student;
+
+select sum(marks) as total from RGM_student;
+
+create database db;
+
+ show databases;
+ 
+ drop database db;  --   deletes the  database db 
